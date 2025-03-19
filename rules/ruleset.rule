@@ -1,5 +1,7 @@
+# Pass through in case a user didn't change their password
 :
 
+# Toggle the case of one character in the password and append an '!'
 rT0r$!
 rT1r$!
 rT2r$!
@@ -12,7 +14,11 @@ rT8r$!
 rT9r$!
 rTAr$!
 rTBr$!
+rTCr$!
+rTDr$!
+rTEr$!
 
+# Toggle the case of one character in the password and append '@9'
 T0$@$9
 T1$@$9
 T2$@$9
@@ -23,10 +29,17 @@ T6$@$9
 T7$@$9
 T8$@$9
 T9$@$9
+TA$@$9
+TB$@$9
+TC$@$9
+TD$@$9
+TE$@$9
 
+# Rotate the word twice to the left or twice to the right
 }}
 {{
 
+# Shift the first character to the back increasing number of times and prepend an '@'
 {^@
 {{^@
 {{{^@
@@ -39,7 +52,11 @@ T9$@$9
 {{{{{{{{{{^@
 {{{{{{{{{{{^@
 
-
+# Toggle the case of one character, copy the first character twice, and move those chars to the back 
+T0z2{{
+T1z2{{
+T2z2{{
+T3z2{{
 T4z2{{
 T5z2{{
 T6z2{{
@@ -52,6 +69,8 @@ TCz2{{
 TDz2{{
 TEz2{{
 
+
+# Various prepending and appending of '!@' along with rotating the course number to the end of the password and appending or prepending the same thing
 ^!^@
 ^@^!
 $!$@
@@ -59,6 +78,18 @@ $@$!
 {{{{^!^@
 {{{{^@^!
 {{{{$@$!
+{{{{$!$@
 
+# Capitalize the whole password and add some common characters to the beginning/end
 u^&
 u$&
+u^!
+u$!
+u^@
+u$@
+u^#
+u$#
+u^%
+u$%
+u^*
+u$*
